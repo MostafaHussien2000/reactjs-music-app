@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+@import "song";
+@import "player";
+@import "songInLibrary";
+@import "library";
+@import "nav";
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0) transparent;
+  scrollbar-track-color: red;
+
+  &:hover {
+    scrollbar-color: rgba(255, 255, 255, 0.397) transparent;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 40px;
+  opacity: 0;
+  transition: background 0.2s ease;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}

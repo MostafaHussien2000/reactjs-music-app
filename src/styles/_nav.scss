@@ -1,0 +1,19 @@
+#nav {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+  width: 60%;
+  margin: auto;
+
+  h1 {
+    color: rgb(61, 187, 124);
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  svg {
+    cursor: pointer;
+    color: rgb(61, 187, 124);
+  }
+}

@@ -1,0 +1,71 @@
+.library-song {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.212);
+    transition: background 0.2s ease;
+  }
+
+  .song-cover {
+    width: 30%;
+    border-radius: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .song-info {
+    h3 {
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin: 8px 0px;
+    }
+    h4 {
+      color: rgba(255, 255, 255, 0.856);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+  }
+
+  &.selected {
+    background: rgba(255, 255, 255, 0.212);
+    border: 1.6px solid rgba(255, 255, 255, 0.507);
+    transition: background 0.2s ease, border-width 0.2s ease;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .library-song {
+    .song-cover {
+      width: 20%;
+      border-radius: 500px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .library-song {
+    gap: 30px;
+    .song-cover {
+      width: 30%;
+      border-radius: 500px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
